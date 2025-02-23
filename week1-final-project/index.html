@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Big Bang Theory</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <div class="header-left">
+            <a href="#" class="logo">
+              <span class="logo-icon"></span>
+              <span>InMovie</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+              <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#overview" class="nav-link">Overview</a></li>
+                <li><a href="#cast" class="nav-link">Cast</a></li>
+                <li>
+                  <a href="#favorite-scene" class="nav-link">Favorite Scene</a>
+                </li>
+                <li><a href="#episodes" class="nav-link">Episodes</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-actions">
+            <div class="profile-icons">
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="profile-btn">
+                <i class="fa-solid fa-user"></i>
+              </button>
+            </div>
+            <button
+              id="hamburger-menu"
+              class="hamburger-menu"
+              aria-label="toggle menu"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id="overview" class="overview">
+          <div class="overview-text">
+            <h1>
+              <a
+                href="https://www.imdb.com/title/tt0898266/"
+                target="_blank"
+                class="title-link"
+              >
+                The Big Bang Theory
+              </a>
+            </h1>
+            <span class="tagline">
+              <i class="fa-solid fa-star"></i> 8.1/10 • 2007 - 2019 • Sitcom
+            </span>
+            <p>
+              The Big Bang Theory is a sitcom that follows two genius
+              physicists, Sheldon Cooper and Leonard Hofstadter, as they
+              navigate their socially awkward yet hilarious interactions. Their
+              geeky world takes a turn when their new neighbor, Penny, and their
+              friends bring unexpected changes into their lives.
+            </p>
+            <div class="button-area">
+              <button class="watch-button" aria-label="watch">
+                <i class="fa-solid fa-play"></i> Watch
+              </button>
+              <button
+                class="watchlist"
+                id="watchlist-button"
+                aria-label="watchlist"
+              >
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-plus"></i>
+                Watchlist
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="cast" class="cast-section">
+          <h2 class="section-title">Cast</h2>
+          <div class="cast-container">
+            <a
+              href="https://www.imdb.com/name/nm1433588/?ref_=ttfc_fc_cl_t2"
+              target="_blank"
+              class="cast-card"
+            >
+              <img src="images/sheldon.jpg" alt="Jim Parsons" />
+              <div class="cast-info">
+                <h3>Jim Parsons</h3>
+                <span>Sheldon Cooper</span>
+              </div>
+            </a>
+            <a
+              href="https://www.imdb.com/name/nm0301959/?ref_=ttfc_fc_cl_t1"
+              target="_blank"
+              class="cast-card"
+            >
+              <img src="images/leonard.webp" alt="Johnny Galecki" />
+              <div class="cast-info">
+                <h3>Johnny Galecki</h3>
+                <span>Leonard Hofstadter</span>
+              </div>
+            </a>
+            <a
+              href="https://www.imdb.com/name/nm0192505/?ref_=ttfc_fc_cl_t3"
+              target="_blank"
+              class="cast-card"
+            >
+              <img src="images/penny.jpg" alt="Kaley Cuoco" />
+              <div class="cast-info">
+                <h3>Kaley Cuoco</h3>
+                <span>Penny</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section id="favorite-scene" class="favorite-scene">
+          <h2 class="section-title">Favorite Scene</h2>
+          <div class="favorite-content">
+            <div class="video-text">
+              <span class="video-title">
+                Sheldon's Unforgettable Moment Watching His Own Video
+              </span>
+              <p>
+                When Sheldon watches a video he recorded in the past, he admires
+                himself like a true scientist. Following his own principle, "If
+                it doesn't come out, go in!", this scene remains one of the most
+                hilarious and genius moments in the series.
+              </p>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="300px"
+                src="https://www.youtube.com/embed/eCi4ZtRGUVY"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+        <section id="episodes" class="episodes">
+          <h2 class="section-title">Memorable Episodes</h2>
+          <div class="episodes-container">
+            <a
+              href="https://www.imdb.com/title/tt0775431/?ref_=ttep_ep_1"
+              target="_blank"
+              class="episode-card"
+            >
+              <img
+                class="episode-img"
+                src="images/episode1.webp"
+                alt="Pilot episode image"
+              />
+              <div class="episode-content">
+                <h3 class="episode-title">Pilot</h3>
+                <p>Season 1, Episode 1</p>
+                <p>
+                  Leonard and Sheldon meet their new neighbor, Penny, marking
+                  the beginning of an unforgettable friendship.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://www.imdb.com/title/tt1627740/?ref_=ttep_ep_23"
+              target="_blank"
+              class="episode-card"
+            >
+              <img
+                class="episode-img"
+                src="images/episode2.webp"
+                alt="The Lunar Excitation  episode image"
+              />
+              <div class="episode-content">
+                <h3 class="episode-title">The Lunar Excitation</h3>
+                <p>Season 3, Episode 23</p>
+                <p>
+                  Sheldon meets Amy Farrah Fowler for the first time, setting
+                  the foundation for one of the most unique relationships.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://www.imdb.com/title/tt2379487/?ref_=ttep_ep_24"
+              target="_blank"
+              class="episode-card"
+            >
+              <img
+                class="episode-img"
+                src="images/episode3.webp"
+                alt="The Countdown Reflection episode image"
+              />
+              <div class="episode-content">
+                <h3 class="episode-title">The Countdown Reflection</h3>
+                <p>Season 5, Episode 24</p>
+                <p>
+                  Howard fulfills his dream and goes to space, making for an
+                  emotional and unforgettable moment.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://www.imdb.com/title/tt5436356/?ref_=ttep_ep_17"
+              target="_blank"
+              class="episode-card"
+            >
+              <img
+                class="episode-img"
+                src="images/episode4.webp"
+                alt="The Celebration Experimentation episode image"
+              />
+              <div class="episode-content">
+                <h3 class="episode-title">The Celebration Experimentation</h3>
+                <p>Season 9, Episode 17</p>
+                <p>
+                  Sheldon's friends throw him a surprise birthday party,
+                  featuring guest Adam West.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://www.imdb.com/title/tt6674736/?ref_=ttep_ep_24"
+              target="_blank"
+              class="episode-card"
+            >
+              <img
+                class="episode-img"
+                src="images/episode5.webp"
+                alt="The Stockholm Syndrome episode img"
+              />
+              <div class="episode-content">
+                <h3 class="episode-title">The Stockholm Syndrome</h3>
+                <p>Season 12, Episode 24</p>
+                <p>
+                  The grand series finale, where friendships, emotions, and
+                  Sheldon’s biggest achievement come together.
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <p>Designed by <strong>Firdes Oya</strong></p>
+            <p>Follow me on:</p>
+            <div class="social-links">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/firdesOya"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/firdes-oya/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#cast">Cast</a></li>
+              <li><a href="#favorite-scene">Favorite Scene</a></li>
+              <li><a href="#episodes">Episodes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerButton = document.getElementById("hamburger-menu");
+        const watchlistButton = document.querySelector(".watchlist");
+        const navMenuMobile = document.getElementById("nav-menu");
+        const closeMenu = document.getElementById("close-menu");
+        const navLinks = document.querySelectorAll(".nav-menu .nav-link");
+
+        function toggleMenu(isOpen) {
+          navMenuMobile.classList.toggle("active", isOpen);
+          closeMenu.classList.toggle("active", isOpen);
+          document.body.style.overflow = isOpen ? "hidden" : "auto";
+        }
+        hamburgerButton.addEventListener("click", () => toggleMenu(true));
+        closeMenu.addEventListener("click", () => toggleMenu(false));
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => toggleMenu(false));
+        });
+
+        if (watchlistButton) {
+          watchlistButton.addEventListener("click", (event) => {
+            watchlistButton.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
