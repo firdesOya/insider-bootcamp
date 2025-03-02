@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html-signUp</title>
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="fname">
+          First name:
+          <input type="text" id="fname" name="fname" placeholder="First name" />
+        </label>
+        <label for="lname">
+          Last name:
+          <input type="text" id="lname" name="lname" placeholder="Last name" />
+        </label>
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="username@gmail.com"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="birthDate">
+          Birth Date:
+          <input type="date" id="birthDate" name="birthDate" />
+        </label>
+
+        <label for="tel">
+          Tel:
+          <input type="tel" id="tel" name="tel" />
+        </label>
+        <span>Gender:</span>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" />
+          Erkek
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" />
+          Kadın
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Password Information</legend>
+        <label for="password">
+          Password:
+          <input type="password" id="password" name="password"
+        /></label>
+        <label for="confirm">
+          Confirm
+          <input type="confirm" id="confirm" name="confirm"
+        /></label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

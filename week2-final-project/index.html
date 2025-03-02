@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>✓ Todo List</h2>
+      </div>
+      <div class="add-todo-section">
+        <input type="search" class="search" placeholder="Search todos..." />
+        <button class="new-todo-button">+ New Todo</button>
+      </div>
+
+      <div class="todo-container">
+        <div class="button-area">
+          <button class="list-button" id="sort-by">Sort By</button>
+          <button class="list-button" id="completed">Show completed</button>
+        </div>
+        <hr class="seperator"/>
+        <ul class="todo-list"></ul>
+        <div class="empty-message">
+          <img src="images/Clipboard.svg" />
+          <span>Your todo list is empty!</span>
+        </div>
+      </div>
+      <div class="modal-overlay"></div>
+      <div class="new-todo">
+        <h3>New todo add</h3>
+        <button class="close">X</button>
+        <form class="todo-form">
+          <div class="form-group">
+            <label class="form-label" for="title"
+              >Title <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="title"
+              name="title"
+              class="title-field"
+              placeholder="Enter title"
+            />
+            <span class="error-message" id="title-error"
+              >Please enter a valid value</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="comment">Comment</label>
+            <textarea
+              id="comment"
+              name="comment"
+              class="textarea-field"
+              rows="5"
+              placeholder="Enter your comment"
+            ></textarea>
+          </div>
+
+          <div class="form-group priority-level">
+            <label class="form-label"
+              >Priority Level<span class="required">*</span>
+            </label>
+            <div class="radio-group">
+              <label class="radio-label priority-input">
+                <input type="radio" name="priority" value="low" />
+                <span class="radio-text">Low</span>
+              </label>
+              <label class="radio-label priority-input">
+                <input type="radio" name="priority" value="medium" />
+                <span class="radio-text">Medium</span>
+              </label>
+              <label class="radio-label priority-input">
+                <input type="radio" name="priority" value="high" />
+                <span class="radio-text">High</span>
+              </label>
+            </div>
+            <span class="error-message" id="priority-error"
+              >A selection is required.</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Status</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="completed" value="false" checked />
+                <span class="radio-text">Not Completed</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="completed" value="true" />
+                <span class="radio-text">Completed</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

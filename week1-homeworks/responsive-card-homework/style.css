@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+p {
+  font-size: 10px;
+  color: gray;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container .card-area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container .card-area .card {
+  background: #f3f5f7;
+  border: 1px solid #7777;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(25% - 10px);
+  height: 380px;
+  box-shadow: 2px 4px 6px rgba(161, 161, 161, 0.3);
+}
+
+.container .card-area .card .card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.container .card-area .card .card-info button {
+  width: 100%;
+  background-color: rgb(56, 56, 56);
+  border: none;
+  padding: 8px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .card-area .card .card-info button:hover {
+  background-color: rgba(41, 2, 2, 0.875);
+  transform: scale(1.05);
+}
+
+.container .card-area .card .card-info h3,
+.container .card-area .card .card-info .description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  min-width: 0;
+}
+
+.container .card-area .card .card-info .price {
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+  font-size: 16px;
+}
+
+.container .card-area .card .card-info button {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container .card-area .card {
+    width: calc(33.33% - 10px); /* 3 sütun */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container .card-area .card {
+    width: calc(50% - 10px); /* 2 sütun */
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container .card-area {
+    justify-content: center; 
+  }
+
+  .container .card-area .card {
+    width: 100%;
+    height: 150px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container .card-area .card .card-info {
+    font-size: 10px;
+    max-width: 200px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .card-area .card .card-info {
+    max-width: 150px;
+  }
+}

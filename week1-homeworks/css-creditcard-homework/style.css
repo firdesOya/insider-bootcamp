@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(249, 235, 218); /* Arka plan rengi */
+  font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+.container .card {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+.container .card:hover {
+  transform: rotateY(180deg);
+}
+.container .card .card-front,
+.container .card .card-back {
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(
+    90deg,
+    rgba(26, 20, 8, 1) 0%,
+    rgba(180, 118, 44, 1) 62%,
+    rgba(121, 82, 9, 0.8463979341736695) 81%,
+    rgba(121, 82, 9, 1) 100%
+  );
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: bisque;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.container .card .card-front .card-header .bank-name {
+  font-size: 36px;
+  font-weight: 600;
+}
+.container .card .card-front .card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container .card .card-front .card-number {
+  font-size: 24px;
+  text-align: start;
+}
+.container .card .card-front .card-expiry {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+.container .card .card-front .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container .card .card-front .card-footer .card-holder {
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+.container .card .card-front .card-footer .card-brand {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+.container .card .card-back {
+  transform: rotateY(180deg);
+  align-items: center;
+}
+.container .card .card-back .black-strip {
+  width: 100%;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.container .card .card-back .cvv-box {
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+  padding: 4px 8px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: black;
+  border-radius: 10px;
+}
+.container .card .card-back .cvv-box .cvv {
+  padding-left: 8px;
+}
+.container .card .card-back .card-text {
+  font-size: 8px;
+  margin-top: 40px;
+  width: 100%;
+}
