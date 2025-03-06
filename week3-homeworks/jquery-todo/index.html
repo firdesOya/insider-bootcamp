@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>jquery-todo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add new todo"
+          autocomplete="off"
+        />
+        <button id="add" type="submit">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#todo-form").on("submit", function (e) {
+        e.preventDefault();
+        let todoItem = $("#todo-input").val().trim();
+        if (todoItem !== "") {
+          $("#todo-list").append(`
+            <li>
+             <div>
+              <input type="checkbox" class="check" />
+              <span class="input-text">${todoItem}</span>
+              </div>
+             <button class="delete">Delete</button>
+            </li>
+          `);
+          $("#todo-input").val("");
+        }
+      });
+      $("#todo-list").on("change", ".check", function () {
+        $(this).next().toggleClass("check");
+      });
+      $("#todo-list").on("click", ".delete", function () {
+        $(this).parent().remove();
+      });
+    });
+  </script>
+</html>
