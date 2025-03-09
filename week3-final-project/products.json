@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "name": "Apple iPhone 15 Pro",
+      "price": 49999,
+      "link": "https://www.apple.com/tr/iphone-15-pro/",
+      "details": "6.1 inç Super Retina XDR ekran, A17 Pro çip, 128GB depolama.",
+      "shortDetails": "Yeni nesil iPhone, güçlü A17 Pro çip ile."
+    },
+    {
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 45999,
+      "link": "https://www.samsung.com/tr/smartphones/galaxy-s24-ultra/",
+      "details": "6.8 inç Dynamic AMOLED 2X ekran, Snapdragon 8 Gen 3, 256GB depolama.",
+      "shortDetails": "Gelişmiş kamera ve ekran teknolojisi."
+    },
+    {
+      "name": "Sony WH-1000XM5",
+      "price": 12999,
+      "link": "https://www.sony.com.tr/electronics/kulakliklar/wh-1000xm5",
+      "details": "Gelişmiş aktif gürültü engelleme, 30 saat pil ömrü, Hi-Res ses desteği.",
+      "shortDetails": "Üstün ses kalitesi ve gürültü engelleme."
+    },
+    {
+      "name": "Dell XPS 15 (2024)",
+      "price": 64999,
+      "link": "https://www.dell.com/tr-tr/shop/dell-xps-15-laptop/spd/xps-15-9520-laptop",
+      "details": "15.6 inç 3.5K OLED ekran, Intel Core i7-13700H, 16GB RAM, 512GB SSD.",
+      "shortDetails": "Yüksek performanslı dizüstü bilgisayar."
+    },
+    {
+      "name": "Apple MacBook Air M2",
+      "price": 34999,
+      "link": "https://www.apple.com/tr/macbook-air-m2/",
+      "details": "13.6 inç Liquid Retina ekran, Apple M2 çipi, 8GB RAM, 256GB SSD.",
+      "shortDetails": "Hafif ve güçlü dizüstü bilgisayar."
+    },
+    {
+      "name": "Logitech MX Master 3S",
+      "price": 2499,
+      "link": "https://www.logitech.com/tr-tr/products/mice/mx-master-3s.910-006561.html",
+      "details": "Ergonomik tasarım, hassas kaydırma, 70 gün pil ömrü, Bluetooth desteği.",
+      "shortDetails": "Ergonomik ve uzun pil ömrü."
+    },
+    {
+      "name": "LG C3 OLED TV (55 inç)",
+      "price": 27999,
+      "link": "https://www.lg.com/tr/televizyon/lg-oled55c3",
+      "details": "55 inç 4K OLED ekran, 120Hz yenileme hızı, Dolby Vision ve Atmos desteği.",
+      "shortDetails": "Üstün görüntü ve ses kalitesi."
+    },
+    {
+      "name": "Bose SoundLink Revolve+ II",
+      "price": 5999,
+      "link": "https://www.bose.com.tr/tr_tr/products/speakers/portable_speakers/soundlink-revolve-plus-ii.html",
+      "details": "360 derece ses, suya dayanıklı tasarım, 17 saat pil ömrü.",
+      "shortDetails": "Taşınabilir ve güçlü ses."
+    },
+    {
+      "name": "Garmin Fenix 7 Sapphire Solar",
+      "price": 17999,
+      "link": "https://www.garmin.com.tr/products/wearables/fenix-7-sapphire-solar/",
+      "details": "GPS akıllı saat, safir cam ekran, solar şarj, 18 gün pil ömrü, spor ve sağlık takibi.",
+      "shortDetails": "Gelişmiş spor ve sağlık takibi."
+    },
+    {
+      "name": "GoPro Hero 12 Black",
+      "price": 9999,
+      "link": "https://gopro.com/tr/tr/shop/cameras/hero12-black/CHDHX-121-master.html",
+      "details": "5.3K video kaydı, HyperSmooth 6.0 stabilizasyon, su geçirmez gövde, gelişmiş gece modu.",
+      "shortDetails": "Yüksek kaliteli aksiyon kamerası."
+    }
+  ]
+}
