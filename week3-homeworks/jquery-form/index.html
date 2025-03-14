@@ -184,6 +184,7 @@
             phone: {
               required: true,
               minlength: 9,
+              digits: true,
             },
             position: { required: true, minlength: 3 },
           },
@@ -203,6 +204,7 @@
             phone: {
               required: "Phone is required",
               minlength: "Phone must be at least 9 characters",
+              digits: "Only numbers are allowed",
             },
             position: {
               required: "Position is required",
