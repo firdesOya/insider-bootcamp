@@ -307,7 +307,7 @@ loadJQuery(() => {
       sessionStorage.setItem("reloadClicked", "true");
       disableButton();
       localStorage.removeItem("userList");
-      loadUsers(true);
+      loadUsers();
     });
 
     loadUsers();
