@@ -17,7 +17,7 @@ function loadJQuery(callback) {
   document.head.appendChild(script);
 }
 
-function loadCSS() {
+const loadCSS = () => {
   if (!document.getElementById("staticStyles")) {
     let styleTag = document.createElement("style");
     styleTag.id = "staticStyles";
@@ -133,16 +133,16 @@ function loadCSS() {
     `;
     document.head.appendChild(styleTag);
   }
-}
+};
 
-function observeTbody(tbody) {
+const observeTbody = (tbody) => {
   const tbodyObserver = new MutationObserver(() => {
     checkTbodyEmpty();
   });
   const observerConfig = { childList: true, subtree: false };
   tbodyObserver.observe(tbody[0], observerConfig);
-}
-function checkTbodyEmpty() {
+};
+const checkTbodyEmpty = () => {
   let tbody = $("#user-table tbody");
   let reloadButton = $("#reload");
   if (!tbody.length) return;
@@ -153,9 +153,9 @@ function checkTbodyEmpty() {
   } else {
     reloadButton.hide();
   }
-}
+};
 
-loadJQuery(function () {
+loadJQuery(() => {
   $(document).ready(function () {
     loadCSS();
 
@@ -198,14 +198,14 @@ loadJQuery(function () {
 
     $(wrapper).append(table);
 
-    let tbody = $("#user-table tbody");
+    const tbody = $("#user-table tbody");
 
     if (tbody.length > 0) {
       observeTbody(tbody);
       checkTbodyEmpty();
     }
 
-    function loadUsers() {
+    const loadUsers = () => {
       const now = Date.now();
       const oneDay = 24 * 60 * 60 * 1000;
 
@@ -238,31 +238,42 @@ loadJQuery(function () {
           console.log(error);
         },
       });
-    }
+    };
 
-    function displayUsers(users) {
+    const displayUsers = (users) => {
       tbody.empty();
-      users.forEach((user) => {
-        tbody.append(`
-          <tr data-id="${user.id}">
-            <td><img src=${user.image} alt="User Image" /></td>
-            <td>${user.firstName} ${user.lastName}</td>
-            <td>${user.email}</td>      
-            <td>${user.phone}</td>        
-            <td>${user.address.country}</td>
-            <td>${user.company.name}</td>
+      users.forEach(
+        ({
+          id,
+          firstName,
+          lastName,
+          email,
+          phone,
+          address,
+          company,
+          image,
+        }) => {
+          tbody.append(`
+          <tr data-id="${id}">
+            <td><img src=${image} alt="User Image" /></td>
+            <td>${firstName} ${lastName}</td>
+            <td>${email}</td>      
+            <td>${phone}</td>        
+            <td>${address.country}</td>
+            <td>${company.name}</td>
             <td><button class="delete-btn">Delete</button></td>
           </tr>
         `);
-      });
+        }
+      );
       if (users.length > 0) {
         $("#reload").hide();
       }
-    }
+    };
 
     $(document).on("click", ".delete-btn", function () {
-      let row = $(this).closest("tr");
-      let userId = row.data("id");
+      const row = $(this).closest("tr");
+      const userId = row.data("id");
 
       let storedData = JSON.parse(localStorage.getItem("userList"));
       storedData.users = storedData.users.filter((user) => user.id !== userId);
@@ -275,16 +286,16 @@ loadJQuery(function () {
       }
     });
 
-    let addNoUserMessage = () => {
+    const addNoUserMessage = () => {
       tbody.html(`
         <tr class="no-user">
         <td colspan="7">User not found</td>
         </tr>
         `);
     };
-    let button = $("#reload");
+    const button = $("#reload");
 
-    let disableButton = () => {
+    const disableButton = () => {
       button.addClass("disabled").text("Already Clicked");
     };
 
