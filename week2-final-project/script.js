@@ -188,6 +188,7 @@ todoListContainer.addEventListener("click", (e) => {
       todoItem.remove();
       if (todos.length === 0) {
         emptyMessage.style.display = "flex";
+        buttonArea.style.display = todos.length > 0 ? "flex" : "none";
       }
       return;
     }
