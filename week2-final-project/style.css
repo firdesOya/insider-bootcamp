@@ -94,7 +94,7 @@ body {
 }
 
 .button-area {
-  display: flex;
+  display:none;
   gap: 12px;
   margin: 16px 0 32px 0;
 }
